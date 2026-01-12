@@ -1,0 +1,11 @@
+{
+  "name": "dummy-project",
+  "version": "1.0.0",
+  "description": "I am building this project to gain valuable experience in field of full stack web-development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sahil Shaikh",
+  "license": "ISC"
+}
