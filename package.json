@@ -2,10 +2,21 @@
   "name": "dummy-project",
   "version": "1.0.0",
   "description": "I am building this project to gain valuable experience in field of full stack web-development.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
   "author": "Sahil Shaikh",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mogoose": "^0.0.1-security",
+    "prettier": "^3.7.4"
+  }
 }
