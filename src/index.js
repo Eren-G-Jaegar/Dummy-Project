@@ -1,4 +1,26 @@
-import mongoose from "mongoose";
+import dotenv from "dotenv"
+
+// import mongoose from "mongoose";
+// import {DB_NAME} from "./constants"
+import conn from "./db/conn.js";
+
+
+dotenv.config({
+  path : './env'
+})
+
+conn()
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 
