@@ -1,10 +1,11 @@
-import dotenv from "dotenv"
-
+import dotenv from "dotenv";
+// import express from 'express';
+import { app } from "./app.js";
 // import mongoose from "mongoose";
 // import {DB_NAME} from "./constants"
 import conn from "./db/conn.js";
 
-
+// const app = express();
 dotenv.config({
   path : './env'
 })
@@ -18,9 +19,10 @@ conn()
     
   } )
 } )
-.catch( ()=>{
-  console.error("MONGODB connection FAILED !!!");
-  
+.catch( (err)=>{
+  console.error("MONGODB CONNECTION FAILED !!! via index.js");
+  console.error("Error details:", err);
+    process.exit(1);           // ← recommended: stop the app if DB fails
 } )
 
 
