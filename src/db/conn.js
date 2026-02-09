@@ -1,5 +1,5 @@
 // import mongoose from "mongoose";
-// import {DB_NAME} from "../constants.js";
+import {DB_NAME} from "../constants.js";
 
 // const conn = async ()=>{
 //   try {
@@ -25,7 +25,8 @@ const connectDB = async () => {
     console.log('Attempting to connect to MongoDB...');
     console.log('MONGO_URI:', process.env.MONGODB_URI ? 'exists' : 'MISSING!!!');
 
-    const conn = await mongoose.connect(process.env.MONGODB_URI);
+    // const conn = await mongoose.connect(process.env.MONGODB_URI);
+    const conn = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
 
     console.log('──────────────────────────────────────────────');
     console.log('MongoDB connected SUCCESSFULLY');

@@ -7,7 +7,7 @@ import conn from "./db/conn.js";
 
 // const app = express();
 dotenv.config({
-  path : './env'
+  path : './.env'
 })
 
 const port = (process.env.PORT || 8000);
